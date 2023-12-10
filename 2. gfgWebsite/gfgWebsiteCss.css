@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.heading{
+    text-align: center;
+    color: green;
+    padding: 20px 20px;
+}
+.navbar ul{
+    margin: 10px;
+    display: flex;
+    color: white;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 10px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    background-color: red;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+a:visited{
+    color: white;
+}
+.main{
+    display: flex;
+}
+.left{
+    width: 66%;
+    margin: 10px;
+}
+.right{
+    width: 34%;
+    margin: 10px;
+}
+h2{
+    color: green;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.image1{
+    height: 150px;
+    background-color: rgb(38, 199, 38);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.image2{
+    height: 100px;
+    background-color: rgb(38, 199, 38);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* NEW: Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .left,
+    .right {
+        width: 100%; /* Make both left and right take up full width on small screens */
+    }
+}
